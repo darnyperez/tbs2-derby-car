@@ -6,7 +6,8 @@ stackId: com.silabs.sdk.stack.super
 stackRoot: /home/darny/bin/SimplicityStudio_v4/developer/sdks/gecko_sdk_suite/v2.6
 appId: ble
 frameworkRoot: app/bluetooth/appbuilder/fwk
-architecture: efr32~family[M]~series[1]~device_configuration[1]~performance[P]~radio[332]~flash[1024K]~temp[G]~package[L]~pins[125]~!module+BRD4166A+iar
+architecture: efr32~family[M]~series[1]~device_configuration[2]~performance[P]~radio[332]~flash[1024K]~temp[G]~package[L]~pins[125]~!module+BRD4166A+gcc
+exactArchitectureToolchain: com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:7.2.1.20170904
 deviceName: soc-thunderboard-sense
 sourceSampleAppId: soc-thunderboard-sense
 generationDirectory: PATH(ISC_RELATIVE):.
