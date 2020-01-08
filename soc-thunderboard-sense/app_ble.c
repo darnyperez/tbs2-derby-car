@@ -68,7 +68,7 @@ AppCfgGattServerUserReadRequest_t appCfgGattServerUserReadRequest[] =
   { gattdb_batt_measurement, battRead },
 //  { gattdb_es_uvindex, esReadUVIndex },
 //  { gattdb_es_pressure, esReadPressure },
-  { gattdb_es_temperature, esReadTemperature },
+//  { gattdb_es_temperature, esReadTemperature },
   { gattdb_es_humidity, esReadHumidity },
   { gattdb_es_ambient_light, esReadAmbientLight },
   { gattdb_es_sound_level, esReadSoundLevel },

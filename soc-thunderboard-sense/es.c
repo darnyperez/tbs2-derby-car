@@ -89,19 +89,19 @@ extern uint32_t RADIO_rhData;
 extern int32_t  RADIO_tempData;
 void esReadTemperature(void)
 {
-  /* 0.01 C */
-  int16_t btTemp = RADIO_tempData / 10;
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  printf("ES: Temp = %3.2f C\r\n", (float)btTemp / 100.0f);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
-                                                            gattdb_es_temperature,
-                                                            0,
-                                                            sizeof(btTemp),
-                                                            (uint8_t *)&btTemp);
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  /* 0.01 C */
+//  int16_t btTemp = RADIO_tempData / 10;
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  printf("ES: Temp = %3.2f C\r\n", (float)btTemp / 100.0f);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
+//                                                            gattdb_es_temperature,
+//                                                            0,
+//                                                            sizeof(btTemp),
+//                                                            (uint8_t *)&btTemp);
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
   return;
 }
 
