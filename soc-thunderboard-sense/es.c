@@ -125,17 +125,17 @@ void esReadHumidity(void)
 
 void esReadAmbientLight(void)
 {
-  /* 0.01 Lux */
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-  printf("ES: Amb light = %3.2f Lux\r\n", (float)RADIO_ambLight / 100.0f);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
-                                                            gattdb_es_ambient_light,
-                                                            0,
-                                                            sizeof(RADIO_ambLight),
-                                                            (uint8_t *)&RADIO_ambLight);
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  /* 0.01 Lux */
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//  printf("ES: Amb light = %3.2f Lux\r\n", (float)RADIO_ambLight / 100.0f);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
+//                                                            gattdb_es_ambient_light,
+//                                                            0,
+//                                                            sizeof(RADIO_ambLight),
+//                                                            (uint8_t *)&RADIO_ambLight);
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
   return;
 }
 

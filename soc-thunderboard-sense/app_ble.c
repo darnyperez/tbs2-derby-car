@@ -70,7 +70,7 @@ AppCfgGattServerUserReadRequest_t appCfgGattServerUserReadRequest[] =
 //  { gattdb_es_pressure, esReadPressure },
 //  { gattdb_es_temperature, esReadTemperature },
 //  { gattdb_es_humidity, esReadHumidity },
-  { gattdb_es_ambient_light, esReadAmbientLight },
+//  { gattdb_es_ambient_light, esReadAmbientLight },
   { gattdb_es_sound_level, esReadSoundLevel },
   /*{ gattdb_es_control_point,  esReadControlPoint },*/
   { gattdb_iaq_eco2, iaqReadECO2 },

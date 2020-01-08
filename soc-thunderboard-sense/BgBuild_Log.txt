@@ -6,7 +6,4 @@ Executing: bgbuild (/home/darny/bin/SimplicityStudio_v4/developer/sdks/gecko_sdk
 Standard output
 ALL OK
 
-Error/Warning output
-Warning: Generic Attribute Service should be the first service in GATT database. Otherwise its attribute handles may change when the database is updated in future.
-
 
