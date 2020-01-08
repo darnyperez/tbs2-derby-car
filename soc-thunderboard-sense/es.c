@@ -107,19 +107,19 @@ void esReadTemperature(void)
 
 void esReadHumidity(void)
 {
-  /* 0.01 %RH */
-  uint16_t humidity = RADIO_rhData / 10;
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  printf("ES: Humidity = %3.2f %%RH\r\n", (float)humidity / 100.0f);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
-                                                            gattdb_es_humidity,
-                                                            0,
-                                                            sizeof(humidity),
-                                                            (uint8_t *)&humidity);
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  /* 0.01 %RH */
+//  uint16_t humidity = RADIO_rhData / 10;
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  printf("ES: Humidity = %3.2f %%RH\r\n", (float)humidity / 100.0f);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
+//                                                            gattdb_es_humidity,
+//                                                            0,
+//                                                            sizeof(humidity),
+//                                                            (uint8_t *)&humidity);
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
   return;
 }
 
