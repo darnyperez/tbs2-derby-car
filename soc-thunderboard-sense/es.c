@@ -52,17 +52,17 @@ void esInit(void)
 
 void esReadUVIndex(void)
 {
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  printf("ES: UV Index = %d\r\n", RADIO_uvIndex);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
-                                                            gattdb_es_uvindex,
-                                                            0,
-                                                            sizeof(RADIO_uvIndex),
-                                                            (uint8_t *)&RADIO_uvIndex);
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  printf("ES: UV Index = %d\r\n", RADIO_uvIndex);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
+//                                                            gattdb_es_uvindex,
+//                                                            0,
+//                                                            sizeof(RADIO_uvIndex),
+//                                                            (uint8_t *)&RADIO_uvIndex);
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
   return;
 }
 

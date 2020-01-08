@@ -162,7 +162,7 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
 	</storageModule>
-	<storageModule generalProj.esf.protocolIds="com.silabs.sdk.stack.super:2.6.4._-411008489.com.silabs.stack.ble:2.12.4.0_905906359" generalProj.esf.protocolNames="ble" moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="3" projectCommon.boardIds="brd4166a:0.0.0" projectCommon.buildArtifactType="EXE" projectCommon.importModeId="LINK_LIBRARIES" projectCommon.partId="mcu.arm.efr32.mg12.efr32mg12p332f1024gl125" projectCommon.sdkId="com.silabs.sdk.stack.super:2.6.4._-411008489"/>
+	<storageModule generalProj.esf.protocolIds="com.silabs.sdk.stack.super:2.6.4._-411008489.com.silabs.stack.ble:2.12.4.0_905906359" generalProj.esf.protocolNames="ble" moduleId="com.silabs.ss.framework.ide.project.core.cpp" project.generation="43" projectCommon.boardIds="brd4166a:0.0.0" projectCommon.buildArtifactType="EXE" projectCommon.importModeId="LINK_LIBRARIES" projectCommon.partId="mcu.arm.efr32.mg12.efr32mg12p332f1024gl125" projectCommon.sdkId="com.silabs.sdk.stack.super:2.6.4._-411008489"/>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="soc-thunderboard-sense.com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType.1828272425" name="SLS CDT Project" projectType="com.silabs.ss.framework.ide.project.core.cdt.cdtMbsProjectType"/>
 	</storageModule>
