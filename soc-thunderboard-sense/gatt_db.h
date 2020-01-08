@@ -21,20 +21,19 @@ extern const struct bg_gattdb_def bg_gattdb_data;
 #define gattdb_batt_measurement                25
 #define gattdb_es_control_point                29
 #define gattdb_power_source_type               33
-#define gattdb_iaq_eco2                        36
-#define gattdb_iaq_tvoc                        38
-#define gattdb_iaq_control_point               40
-#define gattdb_ui_buttons                      44
-#define gattdb_ui_leds                         46
-#define gattdb_ui_rgbleds                      49
-#define gattdb_ui_control_point                52
-#define gattdb_aio_digital_in                  56
-#define gattdb_aio_digital_out                 61
-#define gattdb_imu_acceleration                66
-#define gattdb_imu_orientation                 69
-#define gattdb_imu_control_point               72
-#define gattdb_hall_state                      76
-#define gattdb_hall_field_strength             79
-#define gattdb_hall_control_point              82
+#define gattdb_iaq_tvoc                        36
+#define gattdb_iaq_control_point               38
+#define gattdb_ui_buttons                      42
+#define gattdb_ui_leds                         44
+#define gattdb_ui_rgbleds                      47
+#define gattdb_ui_control_point                50
+#define gattdb_aio_digital_in                  54
+#define gattdb_aio_digital_out                 59
+#define gattdb_imu_acceleration                64
+#define gattdb_imu_orientation                 67
+#define gattdb_imu_control_point               70
+#define gattdb_hall_state                      74
+#define gattdb_hall_field_strength             77
+#define gattdb_hall_control_point              80
 
 #endif

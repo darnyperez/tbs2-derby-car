@@ -60,23 +60,23 @@ void iaqConnectionOpened(void)
 
 void iaqReadECO2(void)
 {
-  uint16_t eco2;  /* ppm */
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  eco2 = RADIO_eco2;
-
-  printf("IAQ: eCO2 = %d [%Xh]\r\n", eco2, eco2);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(
-    conGetConnectionId(),
-    gattdb_iaq_eco2,
-    0,
-    sizeof(eco2),
-    (uint8_t *)&eco2
-    );
-
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  uint16_t eco2;  /* ppm */
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  eco2 = RADIO_eco2;
+//
+//  printf("IAQ: eCO2 = %d [%Xh]\r\n", eco2, eco2);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(
+//    conGetConnectionId(),
+//    gattdb_iaq_eco2,
+//    0,
+//    sizeof(eco2),
+//    (uint8_t *)&eco2
+//    );
+//
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
 
   return;
 }
