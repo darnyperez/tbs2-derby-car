@@ -141,23 +141,23 @@ void esReadAmbientLight(void)
 
 void esReadSoundLevel(void)
 {
-  /* 0.01 dBA */
-  static int16_t soundLevel = 0;
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  soundLevel = (int16_t)(RADIO_soundLevel * 100);
-  printf("ES: SoundLevel = %3.2f dBA\r\n", RADIO_soundLevel);
-
-  RADIO_soundLevelAccumulated = 0;
-  RADIO_soundLevelBufferCount = 0;
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
-                                                            gattdb_es_sound_level,
-                                                            0,
-                                                            sizeof(soundLevel),
-                                                            (uint8_t *)&soundLevel);
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  /* 0.01 dBA */
+//  static int16_t soundLevel = 0;
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  soundLevel = (int16_t)(RADIO_soundLevel * 100);
+//  printf("ES: SoundLevel = %3.2f dBA\r\n", RADIO_soundLevel);
+//
+//  RADIO_soundLevelAccumulated = 0;
+//  RADIO_soundLevelBufferCount = 0;
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
+//                                                            gattdb_es_sound_level,
+//                                                            0,
+//                                                            sizeof(soundLevel),
+//                                                            (uint8_t *)&soundLevel);
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
   return;
 }
 

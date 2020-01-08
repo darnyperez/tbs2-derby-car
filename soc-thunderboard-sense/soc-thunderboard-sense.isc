@@ -94,18 +94,13 @@ appPlugin: stack_bridge=false
   </service>
   <service advertise="false" name="Environment Sensing" requirement="mandatory" type="primary" uuid="181a">
     <informativeText/>
-    <characteristic id="es_sound_level" name="Sound Level" uuid="c8546913-bf02-45eb-8dde-9f8754f4a32e">
-      <informativeText/>
-      <value length="2" type="user" variable_length="false"/>
-      <properties read="true" read_requirement="optional"/>
-    </characteristic>
     <characteristic id="es_control_point" name="Control Point" uuid="c8546913-bf03-45eb-8dde-9f8754f4a32e">
       <informativeText/>
       <value length="4" type="user" variable_length="false"/>
       <properties const="false" const_requirement="optional" indicate="true" indicate_requirement="optional" write="true" write_requirement="optional"/>
     </characteristic>
   </service>
-  <service advertise="false" name="Power Source" requirement="mandatory" type="primary" uuid="ec61a454-ed00-a5e8-b8f9-de9ec026ec51">
+  <service advertise="false" name="Power Source" requirement="mandatory" sourceId="" type="primary" uuid="ec61a454-ed00-a5e8-b8f9-de9ec026ec51">
     <informativeText/>
     <characteristic id="power_source_type" name="Power Source" uuid="ec61a454-ed01-a5e8-b8f9-de9ec026ec51">
       <informativeText/>
