@@ -96,13 +96,6 @@
   <service advertise="false" name="Environment Sensing" requirement="mandatory" type="primary" uuid="181a">
     <informativeText/>
     
-    <!--Pressure-->
-    <characteristic id="es_pressure" name="Pressure" uuid="2a6d">
-      <informativeText/>
-      <value length="4" type="user" variable_length="false"/>
-      <properties read="true" read_requirement="optional"/>
-    </characteristic>
-    
     <!--Temperature-->
     <characteristic id="es_temperature" name="Temperature" uuid="2a6e">
       <informativeText/>

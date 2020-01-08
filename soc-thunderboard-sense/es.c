@@ -68,20 +68,20 @@ void esReadUVIndex(void)
 
 void esReadPressure(void)
 {
-  /* 0.1 Pa */
-  /* 1 mbar = 100 Pa. We want 0.1 Pa, so multiply by 1000 */
-  uint32_t pressure = (uint32_t)(RADIO_pressure * 1000);
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  printf("ES: Pressure = %0.3f mbar\r\n", RADIO_pressure);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
-                                                            gattdb_es_pressure,
-                                                            0,
-                                                            sizeof(pressure),
-                                                            (uint8_t *)&pressure);
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  /* 0.1 Pa */
+//  /* 1 mbar = 100 Pa. We want 0.1 Pa, so multiply by 1000 */
+//  uint32_t pressure = (uint32_t)(RADIO_pressure * 1000);
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  printf("ES: Pressure = %0.3f mbar\r\n", RADIO_pressure);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(conGetConnectionId(),
+//                                                            gattdb_es_pressure,
+//                                                            0,
+//                                                            sizeof(pressure),
+//                                                            (uint8_t *)&pressure);
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
   return;
 }
 
