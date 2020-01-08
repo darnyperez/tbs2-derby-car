@@ -120,13 +120,6 @@
   <service advertise="false" name="IAQ" requirement="mandatory" type="primary" uuid="efd658ae-c400-ef33-76e7-91b00019103b">
     <informativeText/>
     
-    <!--TVOC-->
-    <characteristic id="iaq_tvoc" name="TVOC" uuid="efd658ae-c402-ef33-76e7-91b00019103b">
-      <informativeText/>
-      <value length="2" type="user" variable_length="false"/>
-      <properties read="true" read_requirement="optional"/>
-    </characteristic>
-    
     <!--Control Point-->
     <characteristic id="iaq_control_point" name="Control Point" uuid="efd658ae-c403-ef33-76e7-91b00019103b">
       <informativeText/>

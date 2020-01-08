@@ -74,7 +74,7 @@ AppCfgGattServerUserReadRequest_t appCfgGattServerUserReadRequest[] =
 //  { gattdb_es_sound_level, esReadSoundLevel },
   /*{ gattdb_es_control_point,  esReadControlPoint },*/
 //  { gattdb_iaq_eco2, iaqReadECO2 },
-  { gattdb_iaq_tvoc, iaqReadTVOC },
+//  { gattdb_iaq_tvoc, iaqReadTVOC },
   /*{ gattdb_iaq_tvoc,          uiReadButtons },*/
   { gattdb_ui_buttons, uiReadButtons },
   { gattdb_ui_rgbleds, uiRGBLEDRead },

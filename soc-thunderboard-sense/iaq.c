@@ -83,23 +83,23 @@ void iaqReadECO2(void)
 
 void iaqReadTVOC(void)
 {
-  uint16_t tvoc;  /* ppb */
-  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
-
-  tvoc = RADIO_tvoc;
-
-  printf("IAQ: TVOC = %d [%Xh]\r\n", tvoc, tvoc);
-
-  /* Send response to read request */
-  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(
-    conGetConnectionId(),
-    gattdb_iaq_tvoc,
-    0,
-    sizeof(tvoc),
-    (uint8_t *)&tvoc
-    );
-
-  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
+//  uint16_t tvoc;  /* ppb */
+//  struct gecko_msg_gatt_server_send_user_read_response_rsp_t* gssurrrsp = NULL;
+//
+//  tvoc = RADIO_tvoc;
+//
+//  printf("IAQ: TVOC = %d [%Xh]\r\n", tvoc, tvoc);
+//
+//  /* Send response to read request */
+//  gssurrrsp = gecko_cmd_gatt_server_send_user_read_response(
+//    conGetConnectionId(),
+//    gattdb_iaq_tvoc,
+//    0,
+//    sizeof(tvoc),
+//    (uint8_t *)&tvoc
+//    );
+//
+//  APP_ASSERT_DBG(!gssurrrsp->result, gssurrrsp->result);
 
   return;
 }
